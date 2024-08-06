@@ -443,7 +443,7 @@ const Dashboard = () => {
           <div className="flex flex-row items-center gap-10">
             <div className="relative">
               <Avatar size={matches ? 95 : 77} />
-              {(user.walletAgeInDays && user.walletAgeInDays > daysInYear) &&
+              {/* {(user.walletAgeInDays && user.walletAgeInDays > daysInYear) &&
                 <div className="absolute -top-2 -right-2">
                   <div className="group relative">
                     <Image
@@ -457,7 +457,7 @@ const Dashboard = () => {
                     </div>
                   </div>
                 </div>
-              }
+              } */}
             </div>
             <div>
               <p className="text-lg xl:text-base leading-none text-pale-slate font-medium">
