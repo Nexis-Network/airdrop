@@ -57,6 +57,7 @@ import logxColor from "@/public/logx-color.png";
 import meridianColor from "@/public/meridian-color.png";
 import mirakleColor from "@/public/mirakle-color.png";
 import EcosystemAppItem from "./EcosystemApp";
+import { useAccount } from "wagmi";
 
 const isMultiplyPointNotice = false;
 const ecosystemAppBackgrounds = {
@@ -73,6 +74,7 @@ const ecosystemAppBackgrounds = {
 const Dashboard = () => {
   const dispatch = useAppDispatch();
   const {  user, retrieveTime } = useAppSelector(selectUserSlice);
+  const {address} = useAccount()
   const router = useRouter();
   const matches = useMediaQuery(`(min-width: ${screenWidth.EXTRA_LARGE + 1}px)`);
   const { isIntersecting: isUserSectionIntersecting, ref: userSection } = useIntersectionObserver({
@@ -432,7 +434,7 @@ const Dashboard = () => {
     >
       <div className="flex justify-between items-center">
         <h1 className="text-5xl xl:text-4xl md:text-3xl text-white font-semibold md:max-w-[198px] md:break-all md:truncate">
-          Hey, {eclipseAddress(user.walletAddress)}
+          Hey, {eclipseAddress(address!)}
         </h1>
         <AirdropLive />
       </div>
