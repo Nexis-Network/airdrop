@@ -461,7 +461,7 @@ const Dashboard = () => {
             </div>
             <div>
               <p className="text-lg xl:text-base leading-none text-pale-slate font-medium">
-                Your points
+                Your XP points
               </p>
               <div className="flex items-center gap-1.5 mt-6 xl:mt-2 mb-2">
                 <Image
@@ -476,9 +476,9 @@ const Dashboard = () => {
                 </p>
               </div>
               <div className="flex md:flex-col items-center md:items-start gap-2">
-                <p className="text-sm xl:text-xs leading-none text-pale-slate font-medium xl:max-w-28">
+                {/* <p className="text-sm xl:text-xs leading-none text-pale-slate font-medium xl:max-w-28">
                   Last update {convertTimestampToUTC(user.pointsLastUpdatedAt)}
-                </p>
+                </p> */}
                 {NEXT_PUBLIC_ENVIRONMENT === "staging" &&
                   <div className="group relative cursor-pointer flex justify-center items-center mb-1">
                     <Image
@@ -495,7 +495,7 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="lg:hidden">
+          {/* <div className="lg:hidden">
             <p className="text-lg xl:text-base leading-none text-pale-slate font-medium">
               Your Rank
             </p>
@@ -515,7 +515,7 @@ const Dashboard = () => {
                 className="transition ease-in-out group-hover:translate-x-0.5"
               />
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-row items-center gap-[42px] md:gap-9">
           <Image
@@ -561,7 +561,7 @@ const Dashboard = () => {
           Start earning points
         </p>
         <div ref={earningSection} className={`transition-all ease-in-out duration-300 delay-200 flex flex-row md:flex-col gap-[30px] xl:gap-5 ${isEarningSectionIntersecting ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}>
-          <CardContainer containerClassName="block p-0 w-1/2 md:w-auto min-h-[283px] xl:min-h-56" className="block h-full">
+          {/* <CardContainer containerClassName="block p-0 w-1/2 md:w-auto min-h-[283px] xl:min-h-56" className="block h-full">
             <CardBody className="bg-oslo-gray/[.22] rounded-[20px] flex md:flex-col justify-between md:gap-4 p-10 xl:p-[30px] w-auto h-full">
               <div className="flex flex-col justify-between md:gap-2">
                 <div className="flex flex-col gap-4 xl:gap-3 md:gap-2">
@@ -615,7 +615,7 @@ const Dashboard = () => {
                 />
               </CardItem>
             </CardBody>
-          </CardContainer>
+          </CardContainer> */}
           <CardContainer containerClassName="block p-0 w-1/2 md:w-auto min-h-[283px] xl:min-h-56 md:min-h-[430px]" className="block h-full md:min-h-[430px]">
             <CardBody className="bg-oslo-gray/[.22] rounded-[20px] flex flex-col justify-between md:justify-start xl:gap-2 md:gap-12 p-10 xl:p-[30px] w-auto h-full md:min-h-[430px] bg-[url('/vectors/globe.svg')] md:bg-[url('/vectors/globe-mobile.svg')] bg-no-repeat bg-right-bottom md:bg-bottom xl:bg-contain">
               <div className="flex flex-col gap-4 xl:gap-3">
@@ -664,7 +664,7 @@ const Dashboard = () => {
           </CardContainer>
         </div>
       </div>
-      <div className="flex flex-col gap-8 xl:gap-6 mt-24 xl:mt-16">
+      {/* <div className="flex flex-col gap-8 xl:gap-6 mt-24 xl:mt-16">
         <p className="text-3xl xl:text-2xl text-white font-semibold">
           Follow Nexis on socials
         </p>
@@ -681,7 +681,7 @@ const Dashboard = () => {
             )
           })}
         </div>
-      </div>
+      </div> */}
       <div className="flex flex-col gap-8 xl:gap-6 mt-24 xl:mt-16">
         <div className="flex items-center gap-2.5">
           {currentDate < season2LaunchDate &&
