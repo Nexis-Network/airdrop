@@ -374,7 +374,7 @@ const Dashboard = () => {
 
   function referralLink() {
     const host = !IS_SERVER ? window?.location?.host : ""
-    return `${host}?ref=${user.referralCode}`
+    return `${host}?ref=${address}`
   }
 
   useEffect(() => {
@@ -671,7 +671,7 @@ const Dashboard = () => {
               </CardItem>
             </CardBody>
           </CardContainer> */}
-          <CardContainer containerClassName="block p-0 w-1/2 md:w-auto min-h-[283px] xl:min-h-56 md:min-h-[430px]" className="block h-full md:min-h-[430px]">
+          <CardContainer containerClassName="block p-0 w-full md:w-auto min-h-[283px] xl:min-h-56 md:min-h-[430px]" className="block h-full md:min-h-[430px]">
             <CardBody className="bg-oslo-gray/[.22] rounded-[20px] flex flex-col justify-between md:justify-start xl:gap-2 md:gap-12 p-10 xl:p-[30px] w-auto h-full md:min-h-[430px] bg-[url('/vectors/globe.svg')] md:bg-[url('/vectors/globe-mobile.svg')] bg-no-repeat bg-right-bottom md:bg-bottom xl:bg-contain">
               <div className="flex flex-col gap-4 xl:gap-3">
                 <CardItem
