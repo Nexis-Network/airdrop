@@ -556,6 +556,61 @@ const Dashboard = () => {
           }
         </div>
       </div>
+      {/* <div className="flex flex-col gap-8 xl:gap-6 mt-24 xl:mt-16">
+        <p className="text-3xl xl:text-2xl text-white font-semibold">
+          Follow Nexis on socials
+        </p>
+        <div className="grid grid-cols-4 xl:grid-cols-3 md:grid-cols-1 auto-rows-min gap-[30px] xl:gap-5">
+          {quests.map((quest) => {
+            if (quest.id === "walletAge" && !quest.completed) {
+              return
+            }
+            if (quest.isHidden) {
+              return
+            }
+            return (
+              <Quest key={quest.title} quest={quest} />
+            )
+          })}
+        </div>
+      </div> */}
+      <div className="flex flex-col gap-8 xl:gap-6 mb-24 xl:mb-16">
+        <div className="flex items-center gap-2.5">
+          {currentDate < season2LaunchDate &&
+            <Image
+              src={fireTransparent}
+              alt="fire"
+            />
+          }
+          <div className="flex md:flex-col items-end md:items-start gap-x-9">
+            <p className="text-3xl xl:text-2xl text-white font-semibold">
+              Explore Nexis Ecosystem projects & multiply your points
+            </p>
+            {(NEXT_PUBLIC_ENVIRONMENT === "staging" && isMultiplyPointNotice) &&
+              <p className="text-lg text-buff">
+                <span className="font-bold">Notice</span> you have 0 points to multiply! Please bridge to receive points.
+              </p>
+            }
+          </div>
+        </div>
+          <div className="grid grid-cols-2 md:grid-cols-1 auto-rows-min gap-[30px] xl:gap-5">
+            {ecosystemApps.map((ecosystemApp, i) => {
+              if (ecosystemApp.isHidden) {
+                return
+              }
+              return (
+                <EcosystemAppItem
+                  key={ecosystemApp.name}
+                  ecosystemApp={{
+                    background: i % 2 === 0 ? ecosystemAppBackgrounds.green.background : ecosystemAppBackgrounds.blue.background,
+                    beforeBackground: i % 2 === 0 ? ecosystemAppBackgrounds.blue.beforeBackground : ecosystemAppBackgrounds.blue.beforeBackground,
+                    ...ecosystemApp
+                  }}
+                />
+              )
+            })}
+          </div>
+      </div>
       <div className="flex flex-col gap-8 xl:gap-6">
         <p className="text-3xl xl:text-2xl text-white font-semibold">
           Start earning points
@@ -663,61 +718,6 @@ const Dashboard = () => {
             </CardBody>
           </CardContainer>
         </div>
-      </div>
-      {/* <div className="flex flex-col gap-8 xl:gap-6 mt-24 xl:mt-16">
-        <p className="text-3xl xl:text-2xl text-white font-semibold">
-          Follow Nexis on socials
-        </p>
-        <div className="grid grid-cols-4 xl:grid-cols-3 md:grid-cols-1 auto-rows-min gap-[30px] xl:gap-5">
-          {quests.map((quest) => {
-            if (quest.id === "walletAge" && !quest.completed) {
-              return
-            }
-            if (quest.isHidden) {
-              return
-            }
-            return (
-              <Quest key={quest.title} quest={quest} />
-            )
-          })}
-        </div>
-      </div> */}
-      <div className="flex flex-col gap-8 xl:gap-6 mt-24 xl:mt-16">
-        <div className="flex items-center gap-2.5">
-          {currentDate < season2LaunchDate &&
-            <Image
-              src={fireTransparent}
-              alt="fire"
-            />
-          }
-          <div className="flex md:flex-col items-end md:items-start gap-x-9">
-            <p className="text-3xl xl:text-2xl text-white font-semibold">
-              Explore Nexis Ecosystem projects & multiply your points
-            </p>
-            {(NEXT_PUBLIC_ENVIRONMENT === "staging" && isMultiplyPointNotice) &&
-              <p className="text-lg text-buff">
-                <span className="font-bold">Notice</span> you have 0 points to multiply! Please bridge to receive points.
-              </p>
-            }
-          </div>
-        </div>
-          <div className="grid grid-cols-2 md:grid-cols-1 auto-rows-min gap-[30px] xl:gap-5">
-            {ecosystemApps.map((ecosystemApp, i) => {
-              if (ecosystemApp.isHidden) {
-                return
-              }
-              return (
-                <EcosystemAppItem
-                  key={ecosystemApp.name}
-                  ecosystemApp={{
-                    background: i % 2 === 0 ? ecosystemAppBackgrounds.green.background : ecosystemAppBackgrounds.blue.background,
-                    beforeBackground: i % 2 === 0 ? ecosystemAppBackgrounds.blue.beforeBackground : ecosystemAppBackgrounds.blue.beforeBackground,
-                    ...ecosystemApp
-                  }}
-                />
-              )
-            })}
-          </div>
       </div>
     </motion.div>
   )
