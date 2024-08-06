@@ -43,11 +43,11 @@ const Landing = () => {
       key="landing"
     >
       <h1 className="text-[5rem] 4xl:text-[3.75rem] xl:text-[3.125rem] leading-none text-white font-semibold max-w-[743px] xl:max-w-[450px] md:max-w-none">
-        Light up the Fuse!
+      Power up the Nexis game!
       </h1>
       <p className="text-xl 4xl:text-base text-white/70 max-w-[783px] 3xl:max-w-[628px] md:max-w-[391px] mt-7 mb-16 4xl:mt-5 4xl:mb-[30px]">
         You are invited to the Nexis Airdrop! Don&apos;t be left out of the chance to explore,
-        get points and earn. We are thrilled to have you as a part of the Fuse vibrant community.
+        get points and earn. We are thrilled to have you as a part of the vibrant community of Nexis Network.
       </p>
       <div className="flex flex-col gap-3.5">
         <p className="text-xl text-white font-bold mb-5 2xl:hidden">
