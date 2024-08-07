@@ -22,14 +22,14 @@
 <defs>
 <linearGradient id="paint0_linear_23541_2039" x1="32.231" y1="87.9348" x2="89.9753" y2="-12.0812" gradientUnits="userSpaceOnUse">
 <stop stop-color="#576D59"/>
-<stop offset="1" stop-color="#474747"/>
+<stop offset="1" stop-color="#202020"/>
 </linearGradient>
 <linearGradient id="paint1_linear_23541_2039" x1="32.231" y1="77.9113" x2="85.6567" y2="-14.6247" gradientUnits="userSpaceOnUse">
 <stop stop-color="#617E64"/>
 <stop offset="1" stop-color="#425343"/>
 </linearGradient>
 <linearGradient id="paint2_linear_23541_2039" x1="178.935" y1="81.4235" x2="125.51" y2="173.96" gradientUnits="userSpaceOnUse">
-<stop stop-color="#474747"/>
+<stop stop-color="#202020"/>
 <stop offset="1" stop-color="#575757"/>
 </linearGradient>
 <linearGradient id="paint3_linear_23541_2039" x1="183.199" y1="73.8621" x2="129.773" y2="166.398" gradientUnits="userSpaceOnUse">

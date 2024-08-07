@@ -20,9 +20,10 @@ const config: Config = {
       colors: {
         // #d5fc2e
         primary: "#d5fc2e",
-        secondary: "#333333",
-        tertiary: "#474747",
-        success: "#B4F9BA",
+        // #1e1e1e
+        secondary: "#1e1e1e",
+        tertiary: "#202020",
+        success: "#d5fc2e",
         "nexis-black": "#1A1A1A",
         "carbon-gray": "#5A5A5A",
         "oslo-gray": "#8E8E8E",
@@ -36,8 +37,8 @@ const config: Config = {
         "monsoon": "#868686",
         "star-dust": "#9C9C9C",
         "cactus": "#566A57",
-        "dune": "#333333",
-        "buff": "#F3F5A3",
+        "dune": "#1e1e1e",
+        "buff": "#d5fc2e",
       },
       fontFamily: {
         mona: ["var(--font-mona-sans)"],
