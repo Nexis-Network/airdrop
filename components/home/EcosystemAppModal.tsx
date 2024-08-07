@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "@/store/store";
 import { setSelectedQuest, selectUserSlice, setIsEcosystemAppModalOpen, verifyQuest, initQuest } from "@/store/userSlice";
 import { AnimatePresence, motion } from "framer-motion";
@@ -16,6 +16,9 @@ const EcosystemAppModal = (): JSX.Element => {
   const { isEcosystemAppModalOpen, selectedEcosystemApp, selectedQuest } = useAppSelector(selectUserSlice);
   const dispatch = useAppDispatch();
   const matches = useMediaQuery(`(min-width: ${screenWidth.EXTRA_LARGE + 1}px)`);
+  const [purchaseSliderValue,setPurchaseSliderValue] = useState(0);
+  const pricePerLicense = 10;
+  const [totalPrice,setTotalPrice] = useState(10);
 
   function handleClick(id: string, endpoint?: string) {
     if (endpoint) {
@@ -31,6 +34,7 @@ const EcosystemAppModal = (): JSX.Element => {
     });
   }, [dispatch]);
 
+  console.log("selectedEcosystemApp==",selectedEcosystemApp)
   return (
     <AnimatePresence>
       {isEcosystemAppModalOpen && (
@@ -69,13 +73,51 @@ const EcosystemAppModal = (): JSX.Element => {
                 {selectedEcosystemApp.description}
               </p>
               <div className="flex flex-col gap-[22px] mt-[54px] xl:mt-11">
-                <p className="text-2xl xl:text-xl text-white font-bold">
+                {selectedEcosystemApp.quests[0].id==="shardSaleNexis"?<></>: <p className="text-2xl xl:text-xl text-white font-bold">
                   {selectedEcosystemApp.quests.length} quests
-                </p>
+                </p>}
+               
                 <div className="flex flex-col gap-5">
                   {selectedEcosystemApp.quests.map((ecosystemAppQuest) => {
                     if (ecosystemAppQuest.isHidden) {
                       return;
+                    }
+                    if(ecosystemAppQuest.id==="shardSaleNexis"){
+                      return (   <div
+                        className="bg-oslo-gray/[0.22] rounded-[20px]"
+                      >
+                       <div className="flex flex-col items-start text-start gap-5 p-4">
+                              <p className="text-lg xl:text-base text-white font-semibold pt-4">
+                               Buy Shards
+                              </p>
+                              <input type="text" placeholder="referral code"
+                              className="flex gap-2 bg-oslo-gray/30 rounded-md text-md leading-none text-white px-[20px] py-3.5 focus:outline-none placeholder:text-gray-200 w-[100%]"
+                              />
+                          <div className="text-white">
+                            Purchase {purchaseSliderValue} Shard Licenses
+                          </div>
+                          <input 
+                                  type="range" 
+                                  className="w-full"
+                                  min="0" 
+                                  max="100" 
+                                  step="1"
+                                  value={purchaseSliderValue}
+                                  onChange={(e)=>{
+                                    setPurchaseSliderValue(parseInt(e.target.value))
+                                    setTotalPrice(parseInt(e.target.value)*pricePerLicense)
+                                  }}
+                              />
+                              <div>Price per License: ${pricePerLicense}</div>
+                                <div>Total Price: ${totalPrice}</div>
+                                <button
+          className={`transition ease-in-out bg-primary flex justify-center items-center gap-2 rounded-full w-[163px] text-xl leading-none font-semibold py-[15px] hover:bg-white`}
+        >
+
+       Purchase
+        </button>
+                              </div>
+                      </div>);
                     }
                     return (
                       <AnimatePresence
