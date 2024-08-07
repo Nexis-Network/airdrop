@@ -8,19 +8,19 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9643 31.9829L34.25 9.7524C34.4778 9.42117 34.9966 9.58235 34.9966 9.98432L34.9966 25.921L43.718 25.921C44.0476 25.921 44.2421 26.2906 44.0553 26.5622L28.7696 48.7927C28.5419 49.124 28.023 48.9628 28.023 48.5608L28.023 32.6242L19.3016 32.6242C18.972 32.6242 18.7776 32.2545 18.9643 31.9829Z" fill="white"/>
 <defs>
 <radialGradient id="paint0_radial_23854_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(74.6792 44.6708) rotate(84.6756) scale(207.267 104.522)">
-<stop stop-color="#A3F5AA"/>
+<stop stop-color="#d5fc2e"/>
 <stop offset="0.4" stop-color="#82D289"/>
 <stop offset="0.835" stop-color="#66AB6C"/>
 <stop offset="1" stop-color="#386A3C"/>
 </radialGradient>
 <radialGradient id="paint1_radial_23854_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(84.6042 58.2832) rotate(84.6756) scale(146.124 73.6884)">
-<stop stop-color="#A3F5AA"/>
+<stop stop-color="#d5fc2e"/>
 <stop offset="0.4" stop-color="#82D289"/>
 <stop offset="0.835" stop-color="#66AB6C"/>
 <stop offset="1" stop-color="#386A3C"/>
 </radialGradient>
 <radialGradient id="paint2_radial_23854_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(52.3614 32.6708) rotate(84.5729) scale(222.387 114.285)">
-<stop stop-color="#A3F5AA"/>
+<stop stop-color="#d5fc2e"/>
 <stop offset="0.4" stop-color="#82D289"/>
 <stop offset="0.835" stop-color="#66AB6C"/>
 <stop offset="1" stop-color="#386A3C"/>

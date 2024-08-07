@@ -59,7 +59,7 @@ const Grid3DScene = () => {
   })
 
   return (
-    <gridHelper ref={gridRef} args={[limit * 2, division, "#A3F5AA", "#A3F5AA"]}>
+    <gridHelper ref={gridRef} args={[limit * 2, division, "#d5fc2e", "#d5fc2e"]}>
       <bufferAttribute attach="geometry-attributes-moveable" args={[new Uint8Array(moveable), 1]} />
       <shaderMaterial attach="material" uniforms={uniforms} vertexShader={vertexShader} fragmentShader={fragmentShader} vertexColors={true} />
     </gridHelper>

@@ -198,7 +198,7 @@
 <circle cx="961.5" cy="743.696" r="595.614" fill="url(#paint30_radial_24418_738)"/>
 <defs>
 <radialGradient id="paint0_radial_24418_738" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(958.684 729.189) rotate(90) scale(728.978)">
-<stop stop-color="#A3F5AA" stop-opacity="0.247059"/>
+<stop stop-color="#d5fc2e" stop-opacity="0.247059"/>
 <stop offset="1" stop-color="#B0B0B0" stop-opacity="0"/>
 </radialGradient>
 <linearGradient id="paint1_linear_24418_738" x1="961.5" y1="484.805" x2="961.5" y2="778.037" gradientUnits="userSpaceOnUse">
@@ -318,7 +318,7 @@
 <stop offset="0.993279" stop-color="#333333"/>
 </radialGradient>
 <radialGradient id="paint30_radial_24418_738" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(961.5 743.696) rotate(90) scale(595.614)">
-<stop stop-color="#A3F5AA" stop-opacity="0.22"/>
+<stop stop-color="#d5fc2e" stop-opacity="0.22"/>
 <stop offset="1" stop-color="#ADFFB4" stop-opacity="0"/>
 </radialGradient>
 </defs>

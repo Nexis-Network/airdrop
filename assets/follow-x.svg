@@ -9,13 +9,13 @@
 </g>
 <defs>
 <radialGradient id="paint0_radial_23812_7" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(38.2963 28.9927) rotate(83.1564) scale(203.207 131.22)">
-<stop stop-color="#A3F5AA"/>
+<stop stop-color="#d5fc2e"/>
 <stop offset="0.4" stop-color="#82D289"/>
 <stop offset="0.835" stop-color="#66AB6C"/>
 <stop offset="1" stop-color="#386A3C"/>
 </radialGradient>
 <radialGradient id="paint1_radial_23812_7" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(49.5842 45.1896) rotate(82.6929) scale(117.849 81.1454)">
-<stop stop-color="#A3F5AA"/>
+<stop stop-color="#d5fc2e"/>
 <stop offset="0.4" stop-color="#82D289"/>
 <stop offset="0.835" stop-color="#66AB6C"/>
 <stop offset="1" stop-color="#386A3C"/>
