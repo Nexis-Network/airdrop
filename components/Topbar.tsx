@@ -10,8 +10,20 @@ import { currentDate, season2ClaimLaunchDate } from "@/lib/helpers";
 
 const visitorMenuItems = [
   {
-    title: "Airdrop",
+    title: "Dashboard",
     link: "/",
+  },
+  {
+    title: "Bridge",
+    link: "https://bridge.nexis.network",
+  },
+  {
+    title: "Docs",
+    link: "https://docs.nexis.network",
+  },
+  {
+    title: "Community",
+    link: "https://docs.nexis.network",
   },
 ]
 
