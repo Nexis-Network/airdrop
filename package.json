@@ -27,7 +27,7 @@
     "clsx": "^2.1.0",
     "color-convert": "^2.0.1",
     "framer-motion": "^11.0.8",
-    "next": "^14.2.3",
+    "next": "^14.2.10",
     "react": "^18",
     "react-dom": "^18.2.0",
     "react-ga4": "^2.1.0",
